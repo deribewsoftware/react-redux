@@ -1,0 +1,24 @@
+.card{
+width: 300px;
+height: 400px;
+box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+background-color: white;
+gap: 3px;
+border-radius: 2px;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+div img{
+  object-fit: contain;
+  width: 300px;
+  height: 300px;
+
+}
+.name{
+  font-weight: 700;
+  font-size: 24px;
+  
+}
