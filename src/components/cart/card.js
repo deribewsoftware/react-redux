@@ -1,6 +1,12 @@
 import './card.css'
+import {useDispatch} from 'react-redux';
+import { cartActions } from '../../store/cartSlice';
 
-const Card = ({product,addtoCart}) => {
+const Card = ({product}) => {
+  const dispatch=useDispatch();
+  const onAddTocart=()=>{
+    dispatch(cartActions.addCart(product));
+  }
   return ( 
     <div className="card">
 
@@ -12,9 +18,10 @@ const Card = ({product,addtoCart}) => {
       <div className="flex">
         
         <div>${product.price}</div>
+        <div>Qty:${product.quantity}</div>
         <div>{product.status}</div>
       </div>
-      <button onClick={()=>addtoCart}>Add to Cart</button>
+      <button onClick={onAddTocart}>Add to Cart</button>
 
       
 
