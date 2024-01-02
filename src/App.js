@@ -5,6 +5,7 @@ import Navbar from './components/navabar/navbar';
 import {useSelector} from 'react-redux'
 import { products } from './utils/products';
 import Card from './components/cart/card';
+import FooterComponent from './components/footer';
 
 
 
@@ -41,7 +42,7 @@ function App() {
       <h1>Login</h1>
         </div>}
       
-      
+      <FooterComponent/>
     </div>
   );
 }

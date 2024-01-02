@@ -1,4 +1,5 @@
 import { authActions } from '../../store/authSlice';
+import Badge from '../badge';
 import './navbar.css';
 import {useSelector,useDispatch} from 'react-redux'
 
@@ -22,6 +23,7 @@ const Navbar = () => {
         {isLogged&&<button onClick={onLogout}>Logout</button>}
       </div>
       <div>cart</div>
+      <Badge/>
       
 
 
